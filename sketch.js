@@ -23,8 +23,9 @@ function draw(){
     var b = blueSlider.value();
     
     background(r, g, b);
-    
-    text();
+    text("red", redSlider.x*2 + redSlider.width, 30);
+    text("green", greenSlider.x*2 + greenSlider.width, 55);
+    text("blue", blueSlider.x*2 + redSlider.width, 90);
     
     
 }
