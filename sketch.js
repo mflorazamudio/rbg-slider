@@ -23,9 +23,19 @@ function draw(){
     var b = blueSlider.value();
     
     background(r, g, b);
-    text("red", redSlider.x*2 + redSlider.width, 30);
-    text("green", greenSlider.x*2 + greenSlider.width, 55);
-    text("blue", blueSlider.x*2 + redSlider.width, 90);
     
+    textSize(12);
+    textAlign(LEFT,BASELINE);
+    text("red", 150, 25);
+    text("green", 150, 55);
+    text("blue", 150, 85);
+    
+    text(r, 200, 25);
+    text(g, 200, 55);
+    text(b, 200, 85);
+    
+    textSize(20);
+    textAlign(CENTER,CENTER);
+    text("rgb("+r+", "+g+", "+b+")", width/2, height/2);
     
 }
